@@ -13,9 +13,9 @@ namespace Contoso01.Models
         public int EnrollmentID { get; set; }
         public int CourseID { get; set; }
         public int StudentID { get; set; }
-        public Grade? Grade { get; set; }
+        public Grade? Grade { get; set; } // ? means nullable!
 
-        public virtual Course Course { get; set; }
+        public virtual Course Course { get; set; } //virtual means forfeign key
         public virtual Student Student { get; set; }
     }
 }
